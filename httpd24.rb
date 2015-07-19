@@ -14,7 +14,7 @@ class Httpd24 < Formula
   depends_on "apr-util"
   depends_on "openssl"
   depends_on "pcre"
-  depends_on "homebrew/dupes/zlib"
+  depends_on "zlib"
 
   if build.with? "mpm-worker" and build.with? "mpm-event"
     onoe "Cannot build with both worker and event MPMs, choose one"
